@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(50, 205, 135);
+  }
+  
+  .login-box {
+    position: relative;
+    width: 350px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .user-box {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+  }
+  
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  input[type="text"]:focus ~ label,
+  input[type="password"]:focus ~ label,
+  input[type="text"]:valid ~ label,
+  input[type="password"]:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #81c784;
+    font-size: 14px;
+  }
+  
+  button{
+    display: inline-block;
+    background: rgb(50, 205, 135);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  button:hover {
+    background: #81c784;
+  }
+  
